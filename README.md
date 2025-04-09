@@ -91,8 +91,8 @@ To get the full code and configuration files for this bot, please follow the ins
 3. **Support**: You will receive ongoing support for setting up and troubleshooting the bot once purchased.
 
 **Contact Information:**
-- **Discord User ID**: `1305961143503945772`
-- You can send a friend request to my Discord ID: [Click here to send a friend request](https://discordapp.com/users/1305961143503945772). Please make sure to message me regarding your purchase!
+- **Discord User ID**: `1270837228955762741`
+- You can send a friend request to my Discord ID: [Click here to send a friend request](https://discordapp.com/users/1270837228955762741). Please make sure to message me regarding your purchase!
 
 ---
 
