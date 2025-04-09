@@ -106,5 +106,5 @@ To get the full code and configuration files for this bot, please follow the ins
 
 ### **Robux Payment Instructions:**
    
-1. **Roblox Payment Link**: You can also send Robux directly through the **Roblox Payment Link** system. For more details, please reach out to me.
+1. **Roblox Payment Link**: You can send Robux directly through the **Roblox Payment Link** system. For more details, please reach out to me.
 
