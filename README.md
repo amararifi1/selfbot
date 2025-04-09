@@ -105,8 +105,6 @@ To get the full code and configuration files for this bot, please follow the ins
 ---
 
 ### **Robux Payment Instructions:**
-
-1. **Roblox Group Funds**: You can pay using the group funds of a Roblox group you own. Once the payment is confirmed, I will provide the code.
    
-2. **Roblox Payment Link**: You can also send Robux directly through the **Roblox Payment Link** system. For more details, please reach out to me.
+1. **Roblox Payment Link**: You can also send Robux directly through the **Roblox Payment Link** system. For more details, please reach out to me.
 
