@@ -100,7 +100,7 @@ To get the full code and configuration files for this bot, please follow the ins
 
 - **Use responsibly**: While the bot provides powerful features, it is essential to remember that self-bots violate Discord’s Terms of Service. By using this bot, you assume all responsibility for any consequences related to its use.
 - **No Refunds**: Once the code has been delivered, it is non-refundable.
-- **Robux Payment**: The payment must be made through Robux. You can use **Roblox Group Funds** or a **Roblox Payment Link** to pay. If you need further instructions for making the payment, feel free to contact me directly.
+- **Robux Payment**: The payment must be made through Robux. You can use **Roblox Payment Link** to pay. If you need further instructions for making the payment, feel free to contact me directly.
 
 ---
 
