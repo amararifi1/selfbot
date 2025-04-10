@@ -1,4 +1,3 @@
-```markdown
 # **Discord Self-Bot with Blacklist Check & Auto-Ban**
 
 ## **Overview**
@@ -84,6 +83,7 @@ Once it's running, use these commands in any server:
 - `?#ban @user` — Manually ban a user from the target server.
 
 ### **Example Output:**
+
 ```
 🔍 Checking: @user123 (user123) (123456789012345678)
 ⚠️ Found in 5 blacklisted server(s).
@@ -125,4 +125,5 @@ Want the full working code with support?
   - Complete source code
   - Setup help
   - Future updates (if any)
-```
+
+--- 
