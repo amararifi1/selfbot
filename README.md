@@ -1,3 +1,4 @@
+```markdown
 # **Discord Self-Bot with Blacklist Check & Auto-Ban**
 
 ## **Overview**
@@ -16,7 +17,10 @@ This project is a **Discord Self-Bot** designed to check if users are part of an
 - `?#check @user`: Check if the mentioned user is in any blacklisted servers.
 - `?#checkall`: Check all members of the current server (excluding bots).
 - `?#bantoggle on / off`: Toggle the auto-ban function on or off.
-- Clean, single-message result with Discord markdown (not embeds).
+- `?#blacklist add <server_id>`: Add a server to the blacklist.
+- `?#blacklist remove <server_id>`: Remove a server from the blacklist.
+- `?#blacklist list`: List all blacklisted servers.
+- `?#ban @user`: Manually ban a user from the target server.
 - Automatically bans blacklisted users if toggled on.
 
 ---
@@ -47,7 +51,7 @@ Create a `servers.json` file that lists the server IDs you want to track as "bla
 ```json
 [
   "123456789012345678",
-  "123456789012345678"
+  "987654321098765432"
 ]
 ```
 
@@ -55,8 +59,8 @@ Create a `servers.json` file that lists the server IDs you want to track as "bla
 
 In the main file, replace:
 
-- `YOUR_TOKEN_HERE` with your Discord **user token**
-- `'YOUR_SERVER_ID'` with the server ID where users will be **banned** if found
+- `YOUR_TOKEN_HERE` with your Discord **user token**.
+- `'TARGET_SERVER_ID'` with the server ID where users will be **banned** if found.
 
 ---
 
@@ -74,11 +78,15 @@ Once it's running, use these commands in any server:
 - `?#checkall` — Check everyone in the current server (skips bots).
 - `?#bantoggle on` — Turns **on** auto-ban after detecting blacklisted users.
 - `?#bantoggle off` — Turns **off** auto-ban.
+- `?#blacklist add <server_id>` — Add a server to the blacklist.
+- `?#blacklist remove <server_id>` — Remove a server from the blacklist.
+- `?#blacklist list` — List all blacklisted servers.
+- `?#ban @user` — Manually ban a user from the target server.
 
 ### **Example Output:**
 ```
-🔍 Checking: @kxdfqoaksd. (kxdfqoaksd) (1270837228955762741)
-⚠️ Found in 10 blacklisted server(s).
+🔍 Checking: @user123 (user123) (123456789012345678)
+⚠️ Found in 5 blacklisted server(s).
 🚫 This user has been banned from the target server.
 ```
 
@@ -91,8 +99,8 @@ Want the full working code with support?
 ### 🔥 Price: **Up to 500 Robux**
 
 1. **Contact Me**
-   - Discord ID: `1270837228955762741`
-   - [Click to add on Discord](https://discordapp.com/users/1270837228955762741)
+   - Discord ID: `123456789012345678`
+   - [Click to add on Discord](https://discordapp.com/users/123456789012345678)
 
 2. **Payment via Robux**
    - You'll get full code + setup help after confirmation.
@@ -117,4 +125,4 @@ Want the full working code with support?
   - Complete source code
   - Setup help
   - Future updates (if any)
-
+```
