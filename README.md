@@ -1,36 +1,35 @@
-# **Discord Self-Bot with User Info Logging and Ban Toggle**
+# **Discord Self-Bot with Blacklist Check & Auto-Ban**
 
 ## **Overview**
 
-This project is a **Discord Self-Bot** built to log user information (roles, join date, user ID, etc.) from multiple servers and optionally ban users from a specific server after logging their information.
+This project is a **Discord Self-Bot** designed to check if users are part of any blacklisted servers and optionally ban them from your own server if they're found. It's highly customizable and includes a command-based toggle to enable or disable the auto-ban feature.
 
-### **Important:**
-- **Self-bots are against Discord's Terms of Service (TOS).** Using this bot can result in your Discord account being permanently banned. **Use at your own risk.**
-- This bot requires the `discord.js-selfbot-v13` package to interact with Discord.
+> ⚠️ **Important:**  
+> - **Self-bots are against Discord's Terms of Service.** Running this bot can result in your account being permanently banned.  
+> - **Use at your own risk.**  
+> - This bot uses `discord.js-selfbot-v13` to interface with Discord.
 
 ---
 
 ## **Features**
 
-- **`?#check @user`**: Fetches and logs user information (roles, join date, user ID, etc.).
-- **`?#checkall`**: Fetches and logs user information for all members in the current server.
-- **`?#bantoggle on` / `?#bantoggle off`**: Toggles whether the bot will automatically ban users from a specific server after logging their information.
+- `?#check @user`: Check if the mentioned user is in any blacklisted servers.
+- `?#checkall`: Check all members of the current server (excluding bots).
+- `?#bantoggle on / off`: Toggle the auto-ban function on or off.
+- Clean, single-message result with Discord markdown (not embeds).
+- Automatically bans blacklisted users if toggled on.
 
 ---
 
 ## **Setup**
 
-### **1. Prerequisites**
-Before starting, make sure you have:
+### **1. Requirements**
 
-- **Node.js** installed on your system.
-- A **Discord bot token** with the necessary permissions to read user information and ban members from servers.
+- **Node.js** installed
+- A **user token** from your Discord account (not a bot token)
+- Access to servers you want to check against
 
-### **2. Installing Dependencies**
-
-1. Clone or download the repository.
-   
-2. Run the following commands to install the required dependencies:
+### **2. Installation**
 
 ```bash
 npm init -y
@@ -43,68 +42,79 @@ npm install discord.js-selfbot-v13
 
 ### **3. `servers.json`**
 
-You need to create a `servers.json` file to store the IDs of the servers you want the bot to track. This file will be used to determine which servers to fetch user information from.
+Create a `servers.json` file that lists the server IDs you want to track as "blacklisted".
 
-**Example `servers.json`:**
 ```json
 [
-  "YOUR_SERVER_ID_1",
-  "YOUR_SERVER_ID_2"
+  "123456789012345678",
+  "123456789012345678"
 ]
 ```
 
-Replace `YOUR_SERVER_ID_1` and `YOUR_SERVER_ID_2` with the actual server IDs.
+### **4. Set Your Token and Target Server**
 
-### **4. Bot Token and Target Server Configuration**
+In the main file, replace:
 
-- **Bot Token**: In the code, replace `YOUR_BOT_TOKEN` with your actual bot token.
-- **Target Server for Banning**: Replace the placeholder `TARGET_SERVER_ID` with the server ID where users will be banned if `banToggle` is enabled.
+- `YOUR_TOKEN_HERE` with your Discord **user token**
+- `'YOUR_SERVER_ID'` with the server ID where users will be **banned** if found
 
 ---
 
 ## **Usage**
 
-Once you've set everything up, follow these steps to run the bot:
-
-1. Replace the placeholders in the code (`YOUR_BOT_TOKEN` and `TARGET_SERVER_ID`).
-2. Run the bot using the following command:
+Run the bot with:
 
 ```bash
 node bot.js
 ```
 
-The bot should now be online, and you can use the following commands in Discord:
+Once it's running, use these commands in any server:
 
-- **`?#check @user`**: Check and log the mentioned user's information.
-- **`?#checkall`**: Log information for all members in the current server.
-- **`?#bantoggle on`**: Enable banning users after logging their info.
-- **`?#bantoggle off`**: Disable banning users after logging their info.
+- `?#check @user` — Check a specific user.
+- `?#checkall` — Check everyone in the current server (skips bots).
+- `?#bantoggle on` — Turns **on** auto-ban after detecting blacklisted users.
+- `?#bantoggle off` — Turns **off** auto-ban.
+
+### **Example Output:**
+```
+🔍 Checking: @kxdfqoaksd. (kxdfqoaksd) (1270837228955762741)
+⚠️ Found in 10 blacklisted server(s).
+🚫 This user has been banned from the target server.
+```
 
 ---
 
 ## **How to Purchase**
 
-To get the full code and configuration files for this bot, please follow the instructions below:
+Want the full working code with support?
 
-1. **Contact the Seller**: Reach out via the provided contact method to express interest in purchasing the code.
-2. **Payment**: The price for the bot is **up to 500 Robux**. Once payment is confirmed, the full code will be provided, along with detailed instructions for setup.
-3. **Support**: You will receive ongoing support for setting up and troubleshooting the bot once purchased.
+### 🔥 Price: **Up to 500 Robux**
 
-**Contact Information:**
-- **Discord User ID**: `1270837228955762741`
-- You can send a friend request to my Discord ID: [Click here to send a friend request](https://discordapp.com/users/1270837228955762741). Please make sure to message me regarding your purchase!
+1. **Contact Me**
+   - Discord ID: `1270837228955762741`
+   - [Click to add on Discord](https://discordapp.com/users/1270837228955762741)
+
+2. **Payment via Robux**
+   - You'll get full code + setup help after confirmation.
+
+3. **Ongoing Support**
+   - Troubleshooting and configuration assistance included after purchase.
 
 ---
 
 ## **Disclaimer**
 
-- **Use responsibly**: While the bot provides powerful features, it is essential to remember that self-bots violate Discord’s Terms of Service. By using this bot, you assume all responsibility for any consequences related to its use.
-- **No Refunds**: Once the code has been delivered, it is non-refundable.
-- **Robux Payment**: The payment must be made through Robux. You can use **Roblox Payment Link** to pay. If you need further instructions for making the payment, feel free to contact me directly.
+- ❗ **Self-bots break Discord's TOS.** Use it only if you're aware of the risks.
+- 💸 **No Refunds** after delivery.
+- 💵 **Payment in Robux only** via **Roblox Payment Link**.
 
 ---
 
-### **Robux Payment Instructions:**
-   
-1. **Roblox Payment Link**: You can send Robux directly through the **Roblox Payment Link** system. For more details, please reach out to me.
+## **Robux Payment Instructions**
+
+- Request a payment link directly from me on Discord.
+- After successful payment, you will receive:
+  - Complete source code
+  - Setup help
+  - Future updates (if any)
 
